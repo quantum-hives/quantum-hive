@@ -13,7 +13,3 @@ print(cafetiere.get_type())
 print(cafetiere.get_desc())
 print(cafetiere.get_stock())
 print(cafetiere.get_child())
-
-print(type(grain))
-print(type(cafetiere.get_child()))
-

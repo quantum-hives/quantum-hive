@@ -1,10 +1,10 @@
 class Objects:
-    def __init__(self, name: str, type: str, desc: str, current_stock: int | float, child_object: object | list[object] | None, ):
+    def __init__(self, name: str, type: str, desc: str, current_stock: int | float, child_object: object | None, ):
         self._name = name
         self._type = type
         self._desc = desc
         self._current_stock = current_stock
-        self._child_object = [child_object] if type(child_object) is object else
+        self._child_object = [child_object] if isinstance(child_object, object) else child_object
 
     def get_name(self) -> str:
         return self._name
